@@ -140,7 +140,7 @@ if __name__ == '__main__':
     {
     ## WILL BE PARSED ONCE, WRITING IT AT THE BEIGIN OF THE FILE
     "prefix" : [
-        "PREFIX eventOntology: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX oeev: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
@@ -174,10 +174,10 @@ if __name__ == '__main__':
     "associativeRules" :[
         "instant:{uuid_1} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",   
-        "event:{uuid_1} rdf:type eventOntology:{RDFType} ;",
+        "event:{uuid_1} rdf:type oeev:{RDFType} ;",
         "   time:hasTime instant:{uuid_1} ;", 
-        "   eventOntology:concern <{uri}> ;",
-        "   eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
+        "   oeev:concern <{uri}> ;",
+        "   oeev:hasPest \"{RDFLabel}\"^^xsd:string .",
         "annotation:{Content} oa:hasTarget event:{uuid_1} ."
     ]
 }

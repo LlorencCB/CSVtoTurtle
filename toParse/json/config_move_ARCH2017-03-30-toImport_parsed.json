@@ -1,6 +1,6 @@
 {
     "prefix": [
-        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX oeev: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX event: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
@@ -12,20 +12,22 @@
     ],
     "uuidPerRow": 3,
     "groupingRules": {
-        "content": [
+        "description": [
             "context:anno_{group_uuid} rdf:type oa:Annotation ;",
-            "   oa:bodyValue \"{content}\"^^xsd:string ;",
-            "   dcterms:created \"{created}\"^^xsd:dateTime ."
+            "   oa:bodyValue \"{description}\"^^xsd:string ;",
+            "   oa:motivatedBy oa:describing ;",
+            "   dcterms:created \"{created}\"^^xsd:dateTime ;",
+            "   dcterms:creator agent:\"{creator}\"^^xsd:string ."
         ]
     },
     "associativeRules": [
         "context:instant_{uuid_2} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
-        "   dcterms:created \"{created}\"^^xsd:dateTime .",
-        "context:anno_{content} oa:hasTarget context:event_{uuid_1} .",
+        "   dcterms:created \"{created}\"^^xsd:dateTime ;",
+        "context:anno_{description} oa:hasTarget context:event_{uuid_1} ;",
         "context:event_{uuid_1} rdf:type <{RDFType}> ;",
         "   time:hasTime context:instant_{uuid_2} ;",
-        "   event:{action} <{destination}> ;",
-        "   :concern <{concern}> ."
+        "   oeev:{action} <{destination}> ;",
+        "   oeev:concern <{concern}> ."
     ]
 }

@@ -1,4 +1,4 @@
-concern,Date event,content,RDFType,action,destination,creator,created
+concern,Date event,description,RDFType,action,destination,creator,created
 http://www.phenome-fppn.fr/m3p/arch/2017/c17000241,19/05/2017,Transfer of plants from PHENOARCH to PHENODYN,http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom,from,http://www.phenome-fppn.fr/m3p/phenoarch/,cabrera@supagro.inra.fr,26/05/2017
 http://www.phenome-fppn.fr/m3p/arch/2017/c17000251,19/05/2017,Transfer of plants from PHENOARCH to PHENODYN,http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom,from,http://www.phenome-fppn.fr/m3p/phenoarch/,cabrera@supagro.inra.fr,26/05/2017
 http://www.phenome-fppn.fr/m3p/arch/2017/c17000252,19/05/2017,Transfer of plants from PHENOARCH to PHENODYN,http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom,from,http://www.phenome-fppn.fr/m3p/phenoarch/,cabrera@supagro.inra.fr,26/05/2017

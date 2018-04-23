@@ -1,11 +1,12 @@
 #! /bin/bash
 
-pathToDateFormater='/home/heinrich/PHENOME/Ontology/DateParser.py'
-pathToCSVparser='/home/heinrich/PHENOME/Ontology/CSVparser.py'
-pathToCsv='/home/heinrich/PHENOME/Ontology/toParse/csv'
-pathToCsvParsed='/home/heinrich/PHENOME/Ontology/toParse/csv/parsed'
-pathToTurtle='/home/heinrich/PHENOME/Ontology/toParse/turtle'
-pathToConfig='/home/heinrich/PHENOME/Ontology/toParse/json'
+
+pathToDateFormater='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/DateParser.py'
+pathToCSVparser='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/CSVparser.py'
+pathToCsv='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/toParse/csv'
+pathToCsvParsed='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/toParse/csv/parsed'
+pathToTurtle='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/toParse/turtle'
+pathToConfig='/mnt/c/Users/lcabrera/Documents/LEPSE/PHIS/CSVtoTurtle/toParse/json'
 
 
 # parse date
