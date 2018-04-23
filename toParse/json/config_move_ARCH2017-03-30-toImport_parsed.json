@@ -15,13 +15,13 @@
         "content": [
             "context:anno_{group_uuid} rdf:type oa:Annotation ;",
             "   oa:bodyValue \"{content}\"^^xsd:string ;",
-            "   dcterms:created \"{dateNow}\"^^xsd:dateTime ."
+            "   dcterms:created \"{created}\"^^xsd:dateTime ."
         ]
     },
     "associativeRules": [
         "context:instant_{uuid_2} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp ;",
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
+        "   dcterms:created \"{created}\"^^xsd:dateTime .",
         "context:anno_{content} oa:hasTarget context:event_{uuid_1} .",
         "context:event_{uuid_1} rdf:type <{RDFType}> ;",
         "   time:hasTime context:instant_{uuid_2} ;",

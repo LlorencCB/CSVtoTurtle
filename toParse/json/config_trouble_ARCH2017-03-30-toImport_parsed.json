@@ -13,12 +13,12 @@
     "uuidPerRow" : 3,
     "associativeRules" :[
         "context:instant_{uuid_2} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp .",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp .",
         "context:anno_{uuid_0} rdf:type oa:Annotation ;",
         "   dc:creator \"{author}\"^^xsd:string ;",
         "   oa:hasTarget context:event_{uuid_1} ;",
         "   oa:bodyValue \"{description}\" ;", 
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
+        "   dcterms:created \"{created}\"^^xsd:dateTime .",
         "context:event_{uuid_1} rdf:type <{RDFType}> ;",
         "   time:hasTime context:instant_{uuid_2} ;", 
         "   :concern <{target}> ."

@@ -21,10 +21,10 @@
     "groupingRules" : {
         "Content" : [
             "annotation:{group_uuid} rdf:type oa:Annotation ;",
-            "   oa:bodyValue \"{Content}\"^^xsd:string ;",
+            "   oa:bodyValue \"{description}\"^^xsd:string ;",
             "   oa:motivatedBy oa:describing ;",
-            "   dcterms:creator agent:{Creator} ;",
-            "   dcterms:created \"{Created}\"^^xsd:dateTimeStamp ."
+            "   dcterms:creator agent:{creator} ;",
+            "   dcterms:created \"{created}\"^^xsd:dateTimeStamp ."
         ]
     },
     "associativeRules" :[
@@ -34,6 +34,6 @@
         "   time:hasTime instant:{uuid_1} ;", 
         "   eventOntology:concern <{uri}> .",
         "event:{uuid_1} eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
-        "annotation:{Content} oa:hasTarget event:{uuid_1} ."
+        "annotation:{description} oa:hasTarget event:{uuid_1} ."
     ]
 }

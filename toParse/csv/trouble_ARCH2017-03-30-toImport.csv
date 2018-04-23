@@ -1,4 +1,4 @@
-target,subject,description,RDFType,date,creator,created
+target,subject,description,RDFType,Date event,creator,created
 http://www.phenome-fppn.fr/m3p/arch/2017/c17000258,Broken plant,Plant 258 fallen during watering (7/5/17 16h). Measured biomass = 209g,http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall,2017-05-07 03:02:04+02:00,cabrera@supagro.inra.fr,26/05/2017
 http://www.phenome-fppn.fr/m3p/arch/2017/c17001536,Broken plant,"Plant fallen during watering (06/05/2017 11h). 
 Measured biomass = 183.3g",http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall,2017-05-04T16:12:46+02:00,cabrera@supagro.inra.fr,26/05/2017
