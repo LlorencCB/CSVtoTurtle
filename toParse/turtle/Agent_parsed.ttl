@@ -5,30 +5,40 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>  
 PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> 
 
-agent:lcb rdf:type rdf:type:Person .
-agent:lcb foaf:mbox "cabrera@supagro.inra.fr"^^xsd:string .
-agent:lcb foaf:firstName "Llorenç"^^xsd:string .
-agent:lcb foaf:lastName "Cabrera-Bosquet"^^xsd:string .
+agent:lcabrera rdf:type foaf:Person .
+agent:lcabrera foaf:mbox "cabrera@supagro.inra.fr"^^xsd:string .
+agent:lcabrera foaf:firstName "Llorenç"^^xsd:string .
+agent:lcabrera foaf:lastName "Cabrera-Bosquet"^^xsd:string .
 
-agent:rncs rdf:type rdf:type:Person .
-agent:rncs foaf:mbox "chapuis@supagro.inra.fr"^^xsd:string .
-agent:rncs foaf:firstName "Romain"^^xsd:string .
-agent:rncs foaf:lastName "Chapuis"^^xsd:string .
+agent:nbrichet rdf:type foaf:Person .
+agent:nbrichet foaf:mbox "brichet@supagro.inra.fr"^^xsd:string .
+agent:nbrichet foaf:firstName "Nicolas"^^xsd:string .
+agent:nbrichet foaf:lastName "Brichet"^^xsd:string .
 
-agent:guest rdf:type rdf:type:Person .
-agent:guest foaf:mbox "guestphis@supagro.inra.fr"^^xsd:string .
-agent:guest foaf:firstName "guest"^^xsd:string .
-agent:guest foaf:lastName "guest"^^xsd:string .
+agent:rchapuis rdf:type foaf:Person .
+agent:rchapuis foaf:mbox "chapuis@supagro.inra.fr"^^xsd:string .
+agent:rchapuis foaf:firstName "Romain"^^xsd:string .
+agent:rchapuis foaf:lastName "Chapuis"^^xsd:string .
 
-agent:phis rdf:type rdf:type:Organization .
+agent:bsuard rdf:type foaf:Person .
+agent:bsuard foaf:mbox "suard@supagro.inra.fr"^^xsd:string .
+agent:bsuard foaf:firstName "Benoît"^^xsd:string .
+agent:bsuard foaf:lastName "Suard"^^xsd:string .
 
-agent:diaphen rdf:type rdf:type:Organization .
+agent:guestphis rdf:type foaf:Person .
+agent:guestphis foaf:mbox "guestphis@supagro.inra.fr"^^xsd:string .
+agent:guestphis foaf:firstName "guest"^^xsd:string .
+agent:guestphis foaf:lastName "guest"^^xsd:string .
 
-agent:m3p rdf:type rdf:type:Organization .
+agent:phis rdf:type foaf:Organization .
+
+agent:diaphen rdf:type foaf:Organization .
+
+agent:m3p rdf:type foaf:Organization .
 agent:m3p foaf:mbox "m3p@listes.inra.fr"^^xsd:string .
 
-agent:phenoarch rdf:type rdf:type:Organization .
+agent:phenoarch rdf:type foaf:Organization .
 
-agent:phenodyn rdf:type rdf:type:Organization .
+agent:phenodyn rdf:type foaf:Organization .
 
 

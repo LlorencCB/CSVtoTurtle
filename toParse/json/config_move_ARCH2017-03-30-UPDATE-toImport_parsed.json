@@ -1,0 +1,31 @@
+{
+    "prefix": [
+        "PREFIX oeev: <http://www.phenome-fppn.fr/vocabulary/2018/oeev#> ",
+        "PREFIX event: <http://www.phenome-fppn.fr/id/event/> ",
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
+        "PREFIX dcterms: <http://purl.org/dc/terms/> ",
+        "PREFIX oa: <http://www.w3.org/ns/oa#> ",
+        "PREFIX time: <http://www.w3.org/2006/time#> "
+    ],
+    "uuidPerRow": 3,
+    "groupingRules": {
+        "description": [
+            "annotation:{group_uuid} rdf:type oa:Annotation ;",
+            "   oa:bodyValue \"{description}\"^^xsd:string ;",
+            "   oa:motivatedBy oa:describing ;",
+            "   dcterms:created \"{created}\"^^xsd:dateTime ;",
+            "   dcterms:creator agent:{creator} ."
+        ]
+    },
+    "associativeRules": [
+        "instant:{uuid_2} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
+        "annotation:{uuid_2} oa:hasTarget event:{uuid_1} .",
+        "event:{uuid_1} rdf:type <{RDFType}> ;",
+        "   time:hasTime instant:{uuid_2} ;",
+        "   oeev:{action} <{destination}> ;",
+        "   oeev:concern <{concern}> ."
+    ]
+}

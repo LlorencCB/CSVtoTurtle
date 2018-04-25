@@ -8,7 +8,7 @@
         "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> "
     ],
     "associativeRules" :[
-        "agent:{uri} rdf:type rdf:type:{Agent} .",
+        "agent:{uri} rdf:type foaf:{Agent} .",
         "agent:{uri} foaf:mbox \"{email}\"^^xsd:string .",
         "agent:{uri} foaf:firstName \"{firstName}\"^^xsd:string .",
         "agent:{uri} foaf:lastName \"{lastName}\"^^xsd:string ."

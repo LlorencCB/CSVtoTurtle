@@ -1,7 +1,9 @@
 uri,Agent,email,firstName,lastName
-lcb,Person,cabrera@supagro.inra.fr,Llorenç,Cabrera-Bosquet
-rncs,Person,chapuis@supagro.inra.fr,Romain,Chapuis
-guest,Person,guestphis@supagro.inra.fr,guest,guest
+lcabrera,Person,cabrera@supagro.inra.fr,Llorenç,Cabrera-Bosquet
+nbrichet,Person,brichet@supagro.inra.fr,Nicolas,Brichet
+rchapuis,Person,chapuis@supagro.inra.fr,Romain,Chapuis
+bsuard,Person,suard@supagro.inra.fr,Benoît, Suard
+guestphis,Person,guestphis@supagro.inra.fr,guest,guest
 phis,Organization,,,
 diaphen,Organization,,,
 m3p,Organization,m3p@listes.inra.fr,,
